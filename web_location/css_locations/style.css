@@ -1,0 +1,173 @@
+ @import url('reset.css');
+
+*{
+	outline: 1px solid red;
+}
+a{
+	text-decoration: none;
+	color: #521100;
+}
+
+a:hover{
+	color: orange;
+}
+
+h2{
+	color: #521100;
+	font-size: 30px;
+	text-align: center;
+	padding: 15px 0 10px;
+}
+h3{
+	color: #521100;
+	font-size: 20px;
+}
+p{
+	color: #521100;
+}
+
+
+/*-------------------------------------------------------*/
+body{
+	font-family: Arial;
+	/*background-image: url(../../img_basis/bg_img.png);*/
+	background-position: top center;
+}
+.wrapper{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	padding-top:0.1px;
+	/*background-color: rgba(255,255,255,0.7); */
+
+}
+.part{
+	margin: 0 auto;
+}
+/*-------------------------------------------------------------*/
+
+header{
+	font-size: 20px;
+	position: fixed;
+	z-index: 1;
+	width: 1200px;
+	background-color: rgba(255,255,255,.8);
+	box-shadow: 0 2px 2px  #C5B0AA;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+header img{
+	height: 50px; 
+	display: inline-block;
+	padding-top: 5px;
+}
+header main{
+	
+}
+.headbar{
+	float: right;
+}
+.headbar > li{
+	display: inline-block;
+
+	line-height: 3;
+	margin-right: 5px;
+}
+.headbar > li > a{
+	display: inline-block;
+	line-height: 3;
+}
+/*-------------------------------------------------------------*/
+.part.bread{
+	padding-top: 68px;
+
+}
+/*-------------------------------------------------------------*/
+.map_1{
+	width: 900px;
+	margin: 30px auto;
+}
+.map_1 > img{
+	width: 100%;
+}
+
+.viewer{
+	display: flex;
+
+}
+/*-------------------------------------------------------------*/
+.searchbar{
+	border:1px solid #C5B0AA;
+	border-radius: 20px;
+	width: 80%;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.searchbar img{
+	width: 30px;
+}
+select{
+	width: 200px;
+}
+/*-------------------------------------------------------------*/
+.viewer li{
+	border-top:3px solid rgb(200,185,169);
+	border-right: 3px solid rgb(200,185,169);
+	border-left: 3px solid rgb(200,185,169);
+	padding: 15px 30px;
+	margin-right: 10px;
+	font-size: 20px;
+
+}
+
+.locations > main{
+
+	background-image: url(../img_locations/wallhaven4gwmvd5.jpg);
+	background-position: 0px -11px;
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.main_do{
+	width: 1180px;
+	height: 95%;
+	margin: 0 auto;
+	border: 2px dashed #521100;
+	border-radius: 20px;
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+
+.location{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+.location > li{
+	text-align: center;
+	margin: 0 50px 30px;
+	display: inline-block;
+
+}
+.dot{
+	padding: 10px;
+	border: 2px dashed #521100;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+
+}
+.dot >img{
+	width: 200px;
+}
+.location + p{
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+

@@ -1,0 +1,457 @@
+ @import url('reset.css');
+
+/**{outline: 1px solid red;}*/
+
+a{
+	text-decoration: none;
+	color: #521100;
+}
+
+a:hover{
+	color: orange;
+}
+
+h2{
+	color: #521100;
+	font-size: 30px;
+	text-align: center;
+	padding: 100px 0 30px;
+}
+h3{
+	color: #521100;
+	font-size: 20px;
+}
+p{
+	color: #521100;
+}
+
+/*-------------------------------------------------------*/
+body{
+	font-family: Arial;
+	/*background-image: url(../../img_basis/bg_img.png);*/
+	background-position: top center;
+}
+.wrapper{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-top:0.1px;
+	/*background-color: yellow; */
+
+}
+.part{
+	margin: 0 auto;
+}
+
+/*-------------------------------------------------------------*/
+
+.photo{
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.photos > p{
+	padding: 5px 0px 0px 5px;
+	color: white;
+}
+/*-------------------------------------------------------------*/
+.part.photos{
+	background-image: url(../img_index/photo_bg.png);
+	width:100%;
+	height: 610px;
+	background-size: cover;
+	background-position: center;
+}
+.photos h2{
+	color: white;
+
+}
+
+.photo li img{
+	width: 600px;
+}
+.photo li{
+	background-color: rgba(1,1,1,0.5);
+	margin: 5px;
+}
+.photo li p{
+	color: white;
+	text-align: right;
+	margin-top: 5px;
+	padding-right: 20px;
+	font-size: 12px;
+	padding-bottom: 9px;
+}
+/*-------------------------------------------------------------*/
+.part.intro{
+	text-align: center;
+	padding:  0 4% 4%;
+}
+.part.intro p{
+	margin-bottom: 0.5%;
+}
+/*-------------------------------------------------------------*/
+.part.about{
+	text-align: center;
+	background-image: url(../img_index/222.png);
+	width: 100%;
+	height: auto;
+	padding: 0 0 5%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.part.about p{
+	margin-bottom: 0.5%;
+}
+.part.about p,.part.about h2{
+	color: orange;
+	text-shadow: gray 0 1px 1px;
+}
+
+/*-------------------------------------------------------------*/
+.part.spirits{
+	/*padding: 0 25px;*/
+
+
+}
+.spirit > li{
+	display: flex;
+	align-items: center;
+
+}
+.spirit_2{
+	justify-content: flex-end;
+	text-align: right;
+}
+.spirit li article{
+	padding: 30px 50px;
+	width: 650px;
+	margin: 10px 15px;
+	border-radius: 10px;
+	background-image: url(../img_index/222.png);
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.spirit li article h3{
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: orange;
+	text-shadow: gray 0 1px 1px;
+}
+
+.spirit li article p{
+	color: orange;
+	text-shadow: gray 0 1px 1px;
+	line-height: 1.5;
+}
+ 	@media screen and (max-width: 575px){
+ 		.spirit > li{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		margin-bottom: 30px;
+		}
+		.spirit > li > img{
+			max-width: 100%;
+		}
+		.spirit .spirit_2{
+			align-items: flex-end;
+			text-align: right;
+		}
+		.spirit_2 img{
+			order: 1;
+		}
+		.spirit_2 article{
+			order: 3;
+		}
+		.spirit li article{
+			padding: 10px 0;
+			width: 100%;
+		}
+		.spirit li article h3{
+			margin-bottom: 10px;
+			font-size: 20px;
+		}
+ 	}
+    @media screen and (min-width: 576px) and (max-width: 767px){
+    	.part.spirits{ padding: 0;}
+    	.spirit > li >img{
+		width: 35%;
+		height: auto;}
+		.spirit li article{
+		padding: 10px;
+		width: 100%;
+		}
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px){
+    	.spirit > li >img{
+		width: 35%;
+		height: auto;
+		}
+    }
+    /*@media screen and (min-width: 992px) and (max-width: 1199px){}*/
+    /*@media screen and (min-width: 1200px) {}*/
+/*-------------------------------------------------------------*/
+.features{}
+.feature{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+
+}
+.feature > li{
+	width: 45%;
+	height: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-bottom: 4%;
+	padding: 4% 20px 8%;
+	box-sizing: border-box;
+	text-shadow: gray 0 1px 1px;
+	
+}
+.feature > li > h3{
+	color: white;
+	
+}
+.feature > li > p{
+	color: white;
+}
+
+.feature > li >h3{
+	margin-bottom: 10px;
+}
+
+.feature_1{
+	background-image: url(../img_index/12_1.png);
+	background-size: cover;
+
+}
+.feature_2{
+	background-image: url(../img_index/15_1.png);
+	background-size: cover;
+	text-align: right;
+}
+
+.feature_3{
+	background-image: url(../img_index/14_1.png);
+	background-size: cover;
+}
+.feature_4{
+	background-image: url(../img_index/13_1.png);
+	background-size: cover;
+	text-align: right;
+}
+/*-------------------------------------------------------------*/
+.part.brands{
+}
+.brand{
+	display: flex;
+	justify-content: space-around;
+}
+.brand li {
+	text-align: center;
+}
+
+.brand li p{
+	display: inline-block;
+	width: 80%;
+	padding: 4% 0 0 ;
+}
+
+.brand li img{
+	width: 75%;
+}
+.brand li h3{
+	text-align: center;
+	padding-top: 15px;
+}
+/*-------------------------------------------------------------*/
+.part.activities{
+
+}
+.activity{
+	display: flex;
+	justify-content: space-around;
+}
+.activity > li{
+	background-repeat: no-repeat;
+	background-size: 373px 392px;
+	width: 373px;
+	height: 392px;
+	padding: 0 20px;
+	box-sizing: border-box;
+
+}
+.activity > li > h3{
+	margin-top: 250px;
+	margin-bottom: 15px;
+}
+.activity_1{
+	background-image: url(../img_index/Group55.png);
+
+}
+.activity_2{
+	background-image: url(../img_index/Group56.png);
+
+}
+.activity_3{
+	background-image: url(../img_index/Group57.png);
+
+}
+.activity + p{
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+/*-------------------------------------------------------------*/
+.part.list{
+}
+.list li h3{
+	font-size: 30px;
+	color: white;
+}
+.list li h3:hover{
+	color: orange;
+}
+.list li p{
+	font-size: 20px;
+	color: white;
+	padding: 0 15px;
+}
+.list li p:hover{
+	color: orange;
+}
+.list li{
+	height: 183px;
+	padding: 80px;
+	box-sizing: border-box;
+	background-position: center;
+	margin-bottom: 3px;
+	display: flex;
+	
+	align-items: center;
+	text-shadow: gray 0 1px 1px;
+}
+.cafe{
+	background-image: url(../img_index/Group132_0.png);
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+}
+.hotel{
+	background-image: url(../img_index/Group141_0.png);
+}
+.hospital{
+	background-image: url(../img_index/Group143_0.png);
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+}
+/*-------------------------------------------------------------*/
+.locations > main{
+
+	background-image: url(../../web_location/img_locations/wallhaven4gwmvd4.jpg);
+	background-position: -96px -11px;
+	background-repeat: no-repeat;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.main_do{
+	width: 1180px;
+	height: 95%;
+	margin: 0 auto;
+	border: 2px dashed #521100;
+	border-radius: 20px;
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+
+.location{
+	display: flex;
+	justify-content: space-around;
+
+}
+.location > li{
+	text-align: center;
+	display: inline-block;
+
+}
+.dot{
+	padding: 10px;
+	border: 2px dashed #521100;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+
+}
+.dot >img{
+	width: 200px;
+}
+.location > li >p+p{
+	text-align: right;
+} 
+.location > li >h3{
+	margin-bottom: 5px;
+}
+.location + p{
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+/*-------------------------------------------------------------*/
+footer{
+	background-image: url(../../img_basis/wallhaven-neojdw.jpg);
+	background-position: center;
+	padding: 80px 30px;
+}
+.bottom {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 35px;
+}
+
+.bt_link_title{
+	color: white;
+}
+.bt_link_list > li{
+	text-align: center;
+}
+.bt_link_list > li > p > a{
+	color: white;
+	line-height: 1.5;
+}
+.bt_link_list > li > p > a:hover{
+	color: orange;
+}
+.bt_information{
+	text-align: center;
+}
+h4{
+	color: white;
+	text-align: center;
+}
+.underline{
+	background-color: white;
+	width: 80px;
+	height: 1px;
+	margin: 20px auto;
+}
+h4+h4+h4{
+	margin-bottom: 10px;
+}
+.logo2{
+	width: 100px;
+}

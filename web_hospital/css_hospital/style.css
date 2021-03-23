@@ -1,0 +1,621 @@
+ @import url('reset.css');
+
+*{outline: 1px solid red;}
+
+a{
+	text-decoration: none;
+	color: #521100;
+}
+
+a:hover{
+	color: orange;
+}
+
+h2{
+	color: #521100;
+	font-size: 30px;
+	text-align: center;
+	padding: 100px 0 30px;
+}
+h3{
+	color: #521100;
+	font-size: 20px;
+}
+p{
+	color: #521100;
+}
+
+/*-------------------------------------------------------*/
+body{
+	font-family: Arial;
+	/*background-image: url(../../img_basis/bg_img.png);*/
+	background-position: top center;
+}
+.wrapper{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	padding-top:0.1px;
+	/*background-color: rgba(255,255,255,0.7); */
+
+}
+.part{
+	margin: 0 auto;
+}
+/*-------------------------------------------------------------*/
+
+header{
+	font-size: 20px;
+	position: fixed;
+	z-index: 1;
+	width: 1200px;
+	background-color: rgba(255,255,255,.8);
+	box-shadow: 0 2px 2px  #C5B0AA;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+header img{
+	height: 50px; 
+	display: inline-block;
+	padding-top: 5px;
+}
+header main{
+	
+}
+.headbar{
+	float: right;
+}
+.headbar > li{
+	display: inline-block;
+
+	line-height: 3;
+	margin-right: 5px;
+}
+.headbar > li > a{
+	display: inline-block;
+	line-height: 3;
+}
+
+/*-------------------------------------------------------------*/
+.part.bread{
+	padding-top: 68px;
+
+}
+/*-------------------------------------------------------------*/
+.part.features{
+}
+.feature > li{
+	width: 90%;
+	height: 155px;
+	background-size: cover;
+	background-position: center center;
+	margin: 0 auto 5px;
+}
+.feature_1{
+	background-image: url(../img_hospital/Group252.png);
+}
+.feature_2{
+	background-image: url(../img_hospital/pic.png);
+}
+.feature_3{
+	background-image: url(../img_hospital/Group256.png);
+}
+.feature > li > h3{
+	color:white;
+	text-shadow: black 0 1px 1px;
+	font-size: 25px;
+	text-align: center;
+	padding-top:70px; 
+}
+/*-------------------------------------------------------------*/
+.search{
+	position: sticky;
+    top: 64px;
+    z-index: 1;
+    background: rgba(255,255,255,.8);
+}
+.search h2{
+	padding-top:10px; 
+}
+.searchbar{
+	border:1px solid #C5B0AA;
+	border-radius: 20px;
+	width: 80%;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.searchbar img{
+	width: 30px;
+}
+select{
+	width: 150px;
+}
+/*-------------------------------------------------------------*/
+.part.time{}
+/*-------------------------------------------------------------*/
+.part.departments{
+}
+.department{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-between;
+	width: 95%;
+	margin: 0 auto;
+}
+.department > li{
+	flex-basis: 280px;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin: 0 20px 50px;
+
+}
+.department > li >h3{
+	padding-top: 292px;
+	text-align: center;  
+
+}
+
+ 	@media screen and (max-width: 575px){
+ 		.department{
+		width: 100%;
+		}
+		.department > li{
+		flex-basis: 40%;
+		height: 0;
+		padding-bottom: 50%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top center;
+		margin: 0 5% 35px;
+		}
+
+		.department > li >h3{
+		padding-top: 103%;
+		text-align: center;  
+		}
+
+		.department > .department_11{
+		padding-bottom: 1%;
+		}
+ 	}
+    @media screen and (min-width: 576px) and (max-width: 767px){
+    	.department > li{
+		flex-basis: 40%;
+		height: 0;
+		padding-bottom: 50%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top center;
+		margin: 0 5% 35px;
+		}
+
+		.department > li >h3{
+		padding-top: 103%;
+		text-align: center;  
+		}
+
+		.department > .department_11{
+		padding-bottom: 1%;
+		}
+    
+    }
+    /*@media screen and (min-width: 768px) and (max-width: 991px){}*/
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+    	.department > li{
+		flex-basis: 28%;
+		height: 0;
+		padding-bottom: 35%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top center;
+		margin: 0 2% 50px;
+		}
+
+		.department > li >h3{
+		padding-top: 103%;
+		text-align: center;  
+		}
+    }
+    /*@media screen and (min-width: 1200px) {}*/
+
+
+.department_1{
+	background-image: url(../img_hospital/MaskGroup16.png);
+}
+.department_2{
+	background-image: url(../img_hospital/MaskGroup20.png);
+}
+.department_3{
+	background-image: url(../img_hospital/MaskGroup15.png);
+}
+.department_4{
+	background-image: url(../img_hospital/Group262.png);
+}
+.department_5{
+	background-image: url(../img_hospital/MaskGroup12.png);
+}
+.department_6{
+	background-image: url(../img_hospital/MaskGroup19.png);
+}
+.department_7{
+	background-image: url(../img_hospital/MaskGroup17.png);
+}
+.department_8{
+	background-image: url(../img_hospital/MaskGroup34.png);
+}
+.department_9{
+	background-image: url(../img_hospital/MaskGroup18.png);
+}
+.department_10{
+	background-image: url(../img_hospital/Group260.png);
+}
+.department > .department_11{
+	height: 20px ;
+}
+
+
+/*-------------------------------------------------------------*/
+.part.teams{
+}
+.teams > main{
+	border: 1px solid #521100;
+	width: 95%;
+	margin: 0 auto;
+}
+.team{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-around;
+}
+.team > li{
+	width: 20%;
+	height: 0;
+	padding-bottom: 30%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin: 0 2% 30px;
+
+}
+.team > li >h3{
+	padding-top: 105%;
+	text-align: center;  
+
+}
+
+ 	@media screen and (max-width: 575px){
+ 	.teams > section{
+	width: 100%;
+	}
+	.team{
+	justify-content: space-between;
+	}
+	.team > li{
+	width: 32%;
+	height: 0;
+	padding-bottom: 48%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin: 0 0 20px;
+	}
+	.team > li >h3{
+		padding-top: 100%;
+		text-align: center;
+		font-size: 14px;  
+	}
+ 	}
+    @media screen and (min-width: 576px) and (max-width: 767px){
+    .team > li{
+	width: 28%;
+	height: 0;
+	padding-bottom: 42%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin: 0 2% 20px;
+	}
+	.team > li >h3{
+		padding-top: 105%;
+		text-align: center;  
+	}
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 991px){
+	.teams > section{
+	width: 100%;
+	}
+	}
+
+
+.team_1{
+	background-image: url(../img_hospital/Group1.png);
+}
+.team_2{
+	background-image: url(../img_hospital/Group116.png);
+}
+.team_3{
+	background-image: url(../img_hospital/MaskGroup24.png);
+}
+.team_4{
+	background-image: url(../img_hospital/MaskGroup26.png);
+}
+.team_5{
+	background-image: url(../img_hospital/MaskGroup27.png);
+}
+.team_6{
+	background-image: url(../img_hospital/MaskGroup28.png);
+}
+.team_7{
+	background-image: url(../img_hospital/MaskGroup29.png);
+}
+.team_8{
+	background-image: url(../img_hospital/MaskGroup30.png);
+}
+.team_9{
+	background-image: url(../img_hospital/MaskGroup31.png);
+}
+.team_10{
+	background-image: url(../img_hospital/MaskGroup32.png);
+}
+.team_11{
+	background-image: url(../img_hospital/MaskGroup33.png);
+}
+.team_12{
+	background-image: url(../img_hospital/MaskGroup25.png);
+}
+/*-------------------------------------------------------------*/
+.facilities{
+
+}
+.facility{
+	display: flex;
+	justify-content: space-between;
+}
+.facility > li{
+	background-repeat: no-repeat;
+	background-size: 200px auto;
+	background-position: top center;
+	width: 254px;
+	height: 360px;
+	text-align: center;
+
+
+}
+.facility > li >h3{
+	padding: 10px 0;
+}
+.facility > li >p{
+	text-align: right;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+.facility > li >p >a{
+	display: block;
+	padding-top: 10px;
+}
+.facility_6{
+	display: none;
+}
+
+ 	@media screen and (max-width: 575px){
+ 	.facility{
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	}
+	.facility > li >a >img{
+	width: 100%;
+	position: relative;
+	}
+
+	.facility > li{
+	flex-basis: 45%;
+	height: 400px;
+	text-align: center;
+	margin: 0 ;
+	}
+
+	.facility > li >h3{
+	padding: 10px 0;
+	}
+	.facility > li >p{
+	text-align: right;
+	padding-right: 0px;
+	font-size: 13px;
+	line-height: 1.5;
+	}
+	.facility > li >p >a{
+	display: block;
+	padding-top: 10px;
+	}
+ 	
+ 	}
+
+    @media screen and (min-width: 576px) and (max-width: 767px){
+    .facility{
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+    .facility > li >a >img{
+	width: 100%;
+	}
+
+	.facility > li{
+	flex-basis: 28%;
+	height: 320px;
+	text-align: center;
+	margin: 0 2% 4%;
+	}
+
+	.facility > li >h3{
+		padding: 10px 0;
+	}
+	.facility > li >p{
+		text-align: right;
+		padding-right: 0px;
+		font-size: 13px;
+		line-height: 1.5;
+	}
+	.facility > li >p >a{
+		display: block;
+		padding-top: 10px;
+	}
+	
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 991px){
+	.facility > li >a >img{
+	width: 90%;
+	}
+
+	.facility > li{
+	flex-basis: 20%;
+	height: 320px;
+	text-align: center;
+	}
+	.facility > li >h3{
+		padding: 10px 0;
+	}
+	.facility > li >p{
+		text-align: right;
+		padding-right: 10px;
+	}
+	.facility > li >p >a{
+		display: block;
+		padding-top: 10px;
+	}
+	
+	}
+
+	@media screen and (min-width: 992px) and (max-width: 1200px){
+	.facility > li >a >img{
+	width: 90%;
+	}
+
+	.facility > li{
+	flex-basis: 20%;
+	height: 320px;
+	text-align: center;
+	}
+	.facility > li >h3{
+		padding: 10px 0;
+	}
+	.facility > li >p{
+		text-align: right;
+		padding-right: 10px;
+	}
+	.facility > li >p >a{
+		display: block;
+		padding-top: 10px;
+	}
+	}
+
+	@media screen and (min-width: 1201px) and (max-width: 1300px){
+		.facility > li >a >img{width: 90%;}
+	}
+
+/*-------------------------------------------------------------*/
+
+.phyical{
+	display: flex;
+	flex-direction: column;
+}
+.phyical li{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: right;
+}
+.phyical li article{
+	width: 60%;
+	margin: 0 15px;
+}
+.phyical li img{
+	padding: 0 15px;
+}
+.phyical li h3{
+	padding: 30px 0px 20px;
+	font-size: 30px;
+}
+.phyical li p{
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+
+.phyical > .phyical_2{
+	flex-direction: row;
+	text-align: left;
+}
+.phyical > .phyical_4{
+	flex-direction: row;
+	text-align: left;
+}
+.phyical > .phyical_6{
+	flex-direction: row;
+	text-align: left;
+}
+.phyical > .phyical_8{
+	flex-direction: row;
+	text-align: left;
+}
+
+	@media screen and (max-width: 575px){
+ 	.phyicals .phyical li{
+	flex-direction: column;
+	}
+	.phyical li img{
+	padding: 0px;
+	width: 100%;
+	}
+	.phyical li article{
+	width: 100%;
+	margin: 30px 0;
+}
+ 	}
+
+    @media screen and (min-width: 576px) and (max-width: 767px){
+    .phyical li img{
+    width: 36%;
+    height: auto;
+	}
+	.phyical li article{
+	flex-basis: 60%;
+	margin: 15px 0;
+	}
+	.phyical li h3{
+	padding: 20px 0px 10px;
+	font-size: 20px;
+	}
+	.phyical li p{
+	font-size: 16px;
+	line-height: 1.5;
+	}
+
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 991px){
+	}
+
+	@media screen and (min-width: 992px) and (max-width: 1200px){
+	}
+
+
+/*-------------------------------------------------------------*/
+.environments{}
+.environment{
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+}
+.environment > li{
+	margin-right: 10px;
+}

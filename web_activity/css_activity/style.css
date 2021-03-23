@@ -1,0 +1,165 @@
+ @import url('reset.css');
+
+*{outline: 1px solid red;}
+
+a{
+	text-decoration: none;
+	color: #521100;
+}
+
+a:hover{
+	color: orange;
+}
+
+h2{
+	color: #521100;
+	font-size: 30px;
+	text-align: center;
+	padding: 100px 0 30px;
+}
+h3{
+	color: #521100;
+	font-size: 20px;
+}
+p{
+	color: #521100;
+}
+
+/*-------------------------------------------------------*/
+body{
+	font-family: Arial;
+	/*background-image: url(../../img_basis/bg_img.png);*/
+	background-position: top center;
+	background-color: rgba(233,236,239,.8);
+}
+.wrapper{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	padding-top:0.1px;
+	/*background-color: rgba(255,255,255,0.7); */
+
+}
+.part{
+	margin: 0 auto;
+}
+
+/*-------------------------------------------------------------*/
+.part.bread{
+	padding-top: 68px;
+	padding-left: 30px;
+
+}
+/*-------------------------------------------------------------*/
+
+.catalog{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+
+
+
+.catalog li{
+padding: 9px 5px ;
+margin: 3px;
+background-color: rgb(230,215,196);
+width: 80px;
+text-align: center;
+}
+
+
+
+.types{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+
+}
+
+.types li{
+padding: 8px 5px;
+margin: 3px;
+background-color: rgb(230,215,196);
+width: 80px;
+text-align: center;
+}
+
+
+.activity_1 div{
+	text-align: right;
+	background-color: #521100;
+}
+
+span{
+	display: inline-block;
+	margin: 0 5px;
+	background-color: rgba(255,255,255,.3);
+	color: white;
+}
+
+.activity li{
+	margin: 10px;
+}
+
+.activity li h3{
+	background-color: rgb(230,215,196);
+}
+
+h5{
+	font-size:30px;
+	color:  #521100;
+	padding: 15px 0;
+}
+
+.box{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	
+}
+
+
+
+.activity li div{
+	padding: 5px 0;
+}
+.activity li span{
+	padding: 5px ;
+}
+.activity li h3{
+	padding: 5px ;
+}
+
+.activity li img{
+	width:400px;
+	margin: 10px 30px;
+}
+
+.activity > li > article{
+	height: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.activity_1 > article > h3{
+	text-align: center;
+
+}
+
+.activity_1 article p{
+	font-size: 16px;
+	margin-bottom: 10px;
+
+}
+.activity_1 >article > a{
+	display: inline-block;
+	margin-top: 10px;
+}
+.activity_1 >article > a:hover{
+	color: orange;
+}
+

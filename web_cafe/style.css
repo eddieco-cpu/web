@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cafe</title>
+	<link rel="stylesheet" href="css_cafe/style.css">
+</head>
+
+
+<body>
+	
+		<header class="part head">
+			<section>
+				<input type="checkbox" name="" id="menu_control">
+				<a href="#"><img src="https://via.placeholder.com/300x300" alt=""></a>
+				<label for="menu_control" class="menu_btn"><span>選單</span></label>
+				<ul class="headbar">
+					<li><a href="#">list1 I</a></li>
+					<li><a href="#">list2 I</a></li>
+					<li><a href="#">list3 I</a></li>
+					<li><a href="#">list4 I</a></li>
+					<li><a href="#">list5 I</a></li>
+					<li><a href="#">list6 I</a></li>
+				</ul>
+				<ul class="headbar2">
+					<li><a href="#">list1 I</a></li>
+					<li><a href="#">list2 I</a></li>
+					<li><a href="#">list3 I</a></li>
+					<li><a href="#">list4 I</a></li>
+					<li><a href="#">list5 I</a></li>
+					<li><a href="#">list6 I</a></li>
+				</ul>
+			</section>
+</body>
+</html>

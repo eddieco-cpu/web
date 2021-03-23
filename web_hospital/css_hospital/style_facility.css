@@ -1,0 +1,157 @@
+ @import url('reset.css');
+
+a{
+	text-decoration: none;
+	color: #521100;
+}
+
+a:hover{
+	color: orange;
+}
+
+h2{
+	color: #521100;
+	font-size: 30px;
+	text-align: center;
+	padding: 15px 0 10px;
+}
+h3{
+	color: #521100;
+	font-size: 20px;
+}
+p{
+	color: #521100;
+}
+
+/*-------------------------------------------------------*/
+body{
+	font-family: Arial;
+	/*background-image: url(../../img_basis/bg_img.png);*/
+	background-position: top center;
+}
+.wrapper{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	padding-top:0.1px;
+	/*background-color: rgba(255,255,255,0.7); */
+
+}
+.part{
+	margin: 0 auto;
+}
+/*-------------------------------------------------------------*/
+
+header{
+	font-size: 20px;
+	position: fixed;
+	z-index: 1;
+	width: 1200px;
+	background-color: rgba(255,255,255,.8);
+	box-shadow: 0 2px 2px  #C5B0AA;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+header img{
+	height: 50px; 
+	display: inline-block;
+	padding-top: 5px;
+}
+header main{
+	
+}
+.headbar{
+	float: right;
+}
+.headbar > li{
+	display: inline-block;
+
+	line-height: 3;
+	margin-right: 5px;
+}
+.headbar > li > a{
+	display: inline-block;
+	line-height: 3;
+}
+/*-------------------------------------------------------------*/
+.part.bread{
+	padding-top: 68px;
+
+}
+/*-------------------------------------------------------------*/
+.bg_image{
+	background-image: url(../img_hospital/hospital_facility_bg1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg_image .text_bg{
+	width: 1000px;
+	/*height: 1100px;*/
+	background-color: rgba(1,1,1,.5);
+	margin: 30px auto 0;
+	padding: 50px 85px;
+	box-sizing: border-box;
+}
+
+.text_bg > h2{
+	color: white;
+	margin-bottom:  50px;
+}
+.text_bg > h3{
+	color: white;
+	margin-bottom: 20px;
+}
+.text_bg > p{
+	color: white;
+	margin-bottom: 50px;
+}
+section{
+	height: 50px;
+	padding: 10px 100px;
+	text-align: right;
+}
+/*-------------------------------------------------------------*/
+footer{
+	background-image: url(../../img_basis/wallhaven-neojdw.jpg);
+	background-position: center;
+	padding: 80px 30px;
+}
+.bottom {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 35px;
+}
+
+.bt_link_title{
+	color: white;
+}
+.bt_link_list > li{
+	text-align: center;
+}
+.bt_link_list > li > p > a{
+	color: white;
+	line-height: 1.5;
+}
+.bt_link_list > li > p > a:hover{
+	color: orange;
+}
+.bt_information{
+	text-align: center;
+}
+h4{
+	color: white;
+	text-align: center;
+}
+.underline{
+	background-color: white;
+	width: 80px;
+	height: 1px;
+	margin: 20px auto;
+}
+h4+h4+h4{
+	margin-bottom: 10px;
+}
+.logo2{
+	width: 100px;
+}

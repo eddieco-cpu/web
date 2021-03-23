@@ -1,0 +1,454 @@
+ @import url('reset.css');
+
+*{outline: 1px solid red;}
+a{
+	text-decoration: none;
+	color: #521100;
+}
+
+a:hover{
+	color: orange;
+}
+
+h2{
+	color: #521100;
+	font-size: 30px;
+	text-align: center;
+	padding: 100px 0 30px;
+}
+h3{
+	color: #521100;
+	font-size: 20px;
+}
+p{
+	color: #521100;
+}
+
+/*-------------------------------------------------------*/
+body{
+	font-family: Arial;
+	/*background-image: url(../../img_basis/bg_img.png);*/
+	background-position: top center;
+}
+.part{
+	margin: 0 auto;
+}
+/*-------------------------------------------------------------*/
+
+
+.bg{
+	margin-top: 15px;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+}
+.bgp{
+	margin-right: 10px;
+	width: 90%;
+	height: 0;
+	padding: 25% 0;
+	background-size: cover;
+	background-position: top center;
+	flex-shrink: 0;
+}
+.bgp p{
+	text-align: right;
+	padding: 10px;
+	font-size: 20px;
+	color: white;
+}
+.bgp1{
+background-image: url(../img_hotel/bg1.jpg);
+}
+.bgp2{
+background-image: url(../img_hotel/186.png);
+}
+.bgp3{
+background-image: url(../img_hotel/bg3.jpg);
+}
+p{}
+/*-------------------------------------------------------------*/
+.activities{
+
+}
+.activity{
+	display: flex;
+	justify-content: space-around;
+}
+.activity > li{
+	background-repeat: no-repeat;
+	background-size: 373px 392px;
+	width: 373px;
+	height: 392px;
+	
+
+
+}
+.activity li h3{
+	display: inline-block;
+	margin: 250px 0 10px;
+	padding: 0 15px;
+}
+.activity li p{
+	display: inline-block;
+	margin: 10px 0;
+	padding:0 15px;
+}
+.activity_1{
+	background-image: url(../img_hotel/104.png);
+
+}
+.activity_2{
+	background-image: url(../img_hotel/103.png);
+
+}
+.activity_3{
+	background-image: url(../img_hotel/105.png);
+
+}
+
+/*-------------------------------------------------------------*/
+.spirits{
+
+}
+.spirit > li{
+	background-size: auto 100%;
+	background-position: center;
+	width: 100%;
+	height: 183px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.line{
+	background-color: #521100;
+	width: 2px;
+	height: 45px;
+	margin: 0 5px;
+}
+.space{
+	background-color: rgba(1,1,1,0);
+	width: 106px;
+	height: 100px;
+}
+.spirit > li >h3,.spirit > li >p,.spirit > li >div{
+	font-size: 30px;
+
+}
+.spirit >li > p{
+	padding: 12px 3px 0;
+}
+.spirit >li > h3{
+	writing-mode: vertical-lr;
+}
+.spirit_1{
+	background-image: url(../img_hotel/196.png);
+	background-repeat: no-repeat;
+	background-color: rgb(237,239,240);
+}
+.spirit_2{
+	background-image: url(../img_hotel/199.png);
+	background-repeat: repeat;
+}
+.spirit_3{
+	background-image: url(../img_hotel/202.png);
+	background-repeat: repeat;
+}
+.spirit_2 >h3,.spirit_2 >p,.spirit_2 > div >p{
+	color:white;
+}
+.spirit_2 > .line{
+	background-color:white;
+}
+
+/*-------------------------------------------------------------*/
+.service{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+}
+.service > li{
+	
+
+}
+
+.service h3{
+
+}
+.service h3 a{
+	display: block;
+	width: 55px;
+	margin: 10% auto 0;
+
+}
+        @media screen and (max-width: 575px) { 
+        	.service{
+				justify-content: space-between;
+				align-content: space-between;
+
+			}
+        	.service > li{ 
+        		flex-basis: 45%;
+        		flex-shrink: 0;
+        		margin-bottom: 5%;
+
+        	 }
+        	.service > li > img{ width: 100%; }
+        	.service h3 a{
+				margin-top: 3%;
+
+			}
+
+}
+        /*@media screen and (min-width: 576px) and (max-width: 767px){}*/
+        @media screen and (min-width: 576px) and (max-width: 991px) {
+        	.service{
+				justify-content: space-around;
+				align-content: space-between;
+
+			}
+        	.service > li{ 
+        		flex-basis: 35%;
+        		flex-shrink: 0;
+        		margin-bottom: 5%;
+
+        	 }
+        	.service > li > img{ width: 100%; }
+        	.service h3 a{
+				margin-top: 5%;
+
+			}
+}
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+        	.service > li{ flex-basis: 22%; flex-shrink: 0;}
+        	.service > li > img{ width: 100%; }
+}
+        /*@media screen and (min-width: 1200px) {}*/
+/*-------------------------------------------------------------*/
+.rooms{
+
+}
+.room{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+	align-items: center ;
+	
+
+}
+.room > li{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	flex-basis: 42%;
+	padding: 14% 0;
+	display: flex;
+	align-items: center;
+	margin: 0 3% 6%;
+
+}
+.room > li > h3 >a{
+	color: white;
+	font-size: 30px;
+	text-shadow: gray 0 1px 1px;
+	padding: 0 20px;
+}
+.room_1{
+	background-image: url(../img_hotel/Group213.png);
+}
+.room_2{
+	background-image: url(../img_hotel/Group219.png);
+	justify-content: flex-end;
+}
+.room_3{
+	background-image: url(../img_hotel/Group215.png);
+}
+.room_4{
+	background-image: url(../img_hotel/Group217.png);
+	justify-content: flex-end;
+}
+
+        @media screen and (max-width: 575px) {
+
+        	.room > li{
+        		flex-basis: 100%;
+        		height: 0;
+        		padding: 33% 0;
+        		flex-shrink: 0;
+        		background-size: cover;
+        		margin: 0 0 15px;
+		}
+}
+        /*@media screen and (min-width: 576px) and (max-width: 767px){}*/
+        @media screen and (min-width: 576px) and (max-width: 991px) {
+        	.room{
+			justify-content: space-around;
+		}
+
+        	.room > li{
+        		margin: 0 0 30px;
+		}
+
+}
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+}
+        /*@media screen and (min-width: 1200px) {}*/
+/*-------------------------------------------------------------*/
+.facility{
+
+}
+article{
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+}
+.flex_2{
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+article > div{
+	padding:45px 15px;
+	width: 500px;
+}
+article > div > h3{
+	margin-bottom: 30px;
+}
+
+        @media screen and (max-width: 575px) {
+        	.facility article{
+        		flex-wrap:wrap;
+        		margin-bottom: 35px;
+        	}
+        	.facility article > div{
+				flex-basis: 100%;
+			}
+			.facility article > section{
+				flex-basis: 100%;
+			}
+			.facility article > section img{
+				width: 100%;
+				height: auto;
+			}
+
+}
+        @media screen and (min-width: 576px) and (max-width: 991px) {
+        	.facility article > div{
+				flex-basis: 0;
+				flex-grow: 2;
+			}
+			.facility article > section{
+				flex-basis: 0;
+				flex-grow: 4;
+			}
+			.facility article > section img{
+				width: 100%;
+				height: auto;
+			}
+}
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+}
+        @media screen and (min-width: 1200px) {
+
+}
+/*-------------------------------------------------------------*/
+.locations > main{
+
+	background-image: url(../../web_location/img_locations/wallhaven4gwmvd4.jpg);
+	background-position: -96px -11px;
+	background-repeat: no-repeat;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.main_do{
+	width: 1180px;
+	height: 95%;
+	margin: 0 auto;
+	border: 2px dashed #521100;
+	border-radius: 20px;
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+
+.location{
+	display: flex;
+	justify-content: space-around;
+
+}
+.location > li{
+	text-align: center;
+	display: inline-block;
+
+}
+.dot{
+	padding: 10px;
+	border: 2px dashed #521100;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+
+}
+.dot >img{
+	width: 200px;
+}
+.location > li >p+p{
+	text-align: right;
+} 
+.location > li >h3{
+	margin-bottom: 5px;
+}
+.location + p{
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+/*-------------------------------------------------------------*/
+footer{
+	background-image: url(../../img_basis/wallhaven-neojdw.jpg);
+	background-position: center;
+	padding: 80px 30px;
+}
+.bottom {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 35px;
+}
+
+.bt_link_title{
+	color: white;
+}
+.bt_link_list > li{
+	text-align: center;
+}
+.bt_link_list > li > p > a{
+	color: white;
+	line-height: 1.5;
+}
+.bt_link_list > li > p > a:hover{
+	color: orange;
+}
+.bt_information{
+	text-align: center;
+}
+h4{
+	color: white;
+	text-align: center;
+}
+.underline{
+	background-color: white;
+	width: 80px;
+	height: 1px;
+	margin: 20px auto;
+}
+h4+h4+h4{
+	margin-bottom: 10px;
+}
+.logo2{
+	width: 100px;
+}
