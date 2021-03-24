@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css_hospital/style.css">
 	<link rel="stylesheet" href="../style_css.css/header.css">
 	<link rel="stylesheet" href="../style_css.css/footer.css">
+	 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -16,7 +18,7 @@
 				<a href="../web_index/index.html"><img src="../img_basis/logo.png" alt=""></a>
 				<label for="menu_control" class="menu_btn"><span>選單</span></label>
 				<ul class="headbar">
-					<li><a href="#">活動消息 I</a></li>
+					<li><a href="../web_activity 2/activity2.html">活動消息 I</a></li>
 					<li><a href="../web_location/locations.html">地點位置 I</a></li>
 					<li><a href="../web_cafe/cafe.html">寵物咖啡 I</a></li>
 					<li><a href="../web_hotel/hotel.html">寵物旅館 I</a></li>
@@ -178,18 +180,25 @@
 			</section>
 		</div>
 
-		<div class="environments">
-			<main>
-				<h2>環境設施 I</h2>
-				<ul class="environment">
-					<li class="environment_1"><img src="img_hospital/pic-5.png" alt=""></li>
-					<li class="environment_2"><img src="img_hospital/pic-4.png" alt=""></li>
-					<li class="environment_3"><img src="img_hospital/pic-6.png" alt=""></li>
-				</ul>
-			</main>
-		</div>
+	
+	<h2>環境設施 I</h2>
+ 	<div class="swiper-container">
+ 	    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img_hospital/56f846ed11d2abe8f92b4a6a8d15ed48.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img_hospital/pic-4.png" alt=""></div>
+      <div class="swiper-slide"><img src="img_hospital/pic-6.png" alt=""></div>
+      <div class="swiper-slide"><img src="img_hospital/99.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img_hospital/98.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img_hospital/pic-3.png" alt=""></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
 
-</div>	
+
 <!-- ----------------------------------------------------- -->
 		<div class="part locations">
 			<h2>地點 I</h2>
@@ -206,6 +215,9 @@
 				</div>
 			</section>
 		</div>
+
+
+
 <!-- --------------------------------------------------------- -->
 		<footer>
 			<section class="bottom">
@@ -265,5 +277,30 @@
 
 			</section>
 		</footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      cssMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
+      mousewheel: true,
+      keyboard: true,
+
+       autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+    });
+  </script>
 </body>
 </html>

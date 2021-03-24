@@ -56,10 +56,15 @@
 	font-size: 20px;
 }
 
+.location{
+	overflow-x: scroll;
+}
+
 @media screen and (max-width: 575px) { 
 
 	.main_do{
 	width: 95%;
+	
 	}
 	
 	.location > li{
@@ -123,5 +128,19 @@ h4+h4+h4{
 	justify-content: space-between;
 	margin-bottom: 35px;
 	}
-
+	footer{
+	background-image: url(../img_basis/wallhaven-neojdw.jpg);
+	background-position: center;
+	padding: 80px 3px;
+	}
+	.bottom div h3{
+	font-size: 16px;
+	text-align: center;
+	}
+	.underline{
+	background-color: white;
+	width: 60px;
+	height: 1px;
+	margin: 20px auto;
+}
 }

@@ -75,7 +75,7 @@ header main{
 }
 /*-------------------------------------------------------------*/
 .part.bread{
-	padding-top: 68px;
+	padding-top: 78px;
 
 }
 /*-------------------------------------------------------------*/
@@ -86,7 +86,7 @@ header main{
 	background-size: cover;
 }
 .bg_image .text_bg{
-	width: 1000px;
+	width: 85%;
 	/*height: 1100px;*/
 	background-color: rgba(1,1,1,.5);
 	margin: 30px auto 0;

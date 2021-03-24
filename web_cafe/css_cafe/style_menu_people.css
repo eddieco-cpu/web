@@ -24,6 +24,9 @@ p{
 	color: #521100;
 }
 
+
+
+
 /*-------------------------------------------------------*/
 body{
 	font-family: Arial;
@@ -99,7 +102,7 @@ h2{
 	background-image: url(../img_cafe/Group248.png);
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: 1200px 1800px;
+	background-size: 1200px 1600px;
 }
 
 table,tr,td{
@@ -120,53 +123,57 @@ article{
 
 
 /*-------------------------------------------------------------*/
-.changepage{
-	text-align: right;
-	padding: 60px 15px 50px;
-	font-size: 20px;
-	text-shadow:  gray 0 1px 1px;
-}
-/*-------------------------------------------------------------*/
-footer{
-	background-image: url(../../img_basis/wallhaven-neojdw.jpg);
-	background-position: center;
-	padding: 80px 30px;
-}
-.bottom {
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 35px;
-}
 
-.bt_link_title{
-	color: white;
+
+
+
+	@media screen and (min-width: 600px) and (max-width: 767px){
+
+ 		.menu_bgc{
+		background-image: url(../img_cafe/Group248.png);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: 170% auto;
+		}
+
+		body div.wrapper{
+			width: 100%;
+		}
+
+    }
+
+
+    	@media screen  and (max-width: 599px){
+
+ 		.menu_bgc{
+		background-image: url(../img_cafe/Group248.png);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: 200% auto;
+		}
+
+		body div.wrapper{
+			width: 100%;
+		}
+
+
+		table,tr,td{
+		margin: 0 auto;
+		border:1px solid #8C6055;
+		font-size: 12px;
+	}
+	.title{
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+
+	h2{
+	margin: 6px 0 47%;
+	
+    }
+
+    article{
+	margin-bottom: 30px;
 }
-.bt_link_list > li{
-	text-align: center;
-}
-.bt_link_list > li > p > a{
-	color: white;
-	line-height: 1.5;
-}
-.bt_link_list > li > p > a:hover{
-	color: orange;
-}
-.bt_information{
-	text-align: center;
-}
-h4{
-	color: white;
-	text-align: center;
-}
-.underline{
-	background-color: white;
-	width: 80px;
-	height: 1px;
-	margin: 20px auto;
-}
-h4+h4+h4{
-	margin-bottom: 10px;
-}
-.logo2{
-	width: 100px;
 }

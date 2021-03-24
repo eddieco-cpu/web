@@ -56,33 +56,106 @@ body{
 	color: white;
 }
 /*-------------------------------------------------------------*/
-.part.photos{
-	background-image: url(../img_index/photo_bg.png);
-	width:100%;
-	height: 610px;
-	background-size: cover;
-	background-position: center;
-}
-.photos h2{
-	color: white;
 
+ html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrapper .swiper-container {
+    	background-image: url(../img_index/photo_bg.png);
+		width:100%;
+		height: 0px;
+		padding-bottom: 38%;
+    }
+
+    .swiper-container h2 {
+    	color: white;
+    	padding-top: 7%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: rgba(255,255,255,0);
+      
+
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: flex-start;
+    }
+
+     .swiper-slide img{
+     	width: 100%;
+     	display: block;
+     }
+
+     .swiper-slide p{
+     	width: 100%;
+     	display: block;
+     	text-align: right;
+     	padding-top: 1%;
+     	padding-bottom: 1%;
+     	color: white;
+     	background-color: rgba(1,1,1,.5);
+     	font-size: 12px;
+     }
+
+     .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    display: none;
 }
 
-.photo li img{
-	width: 600px;
-}
-.photo li{
-	background-color: rgba(1,1,1,0.5);
-	margin: 5px;
-}
-.photo li p{
+     .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    color: white;
+	}
+	.swiper-button-next:after, .swiper-button-prev:after {
 	color: white;
-	text-align: right;
-	margin-top: 5px;
-	padding-right: 20px;
-	font-size: 12px;
-	padding-bottom: 9px;
-}
+	}
+
+
+	@media screen and (min-width: 992px) and (max-width: 1199px){
+		.wrapper .swiper-container {
+		padding-bottom: 42%;
+    	}
+	}
+	@media screen and (min-width: 768px) and (max-width:991px){
+		.wrapper .swiper-container {
+		padding-bottom: 56%;
+    	}
+	}
+	@media screen and (min-width: 576px) and (max-width: 767px){
+    	.wrapper .swiper-container {
+		padding-bottom: 70%;
+    	}
+    }
+
+    @media screen  and (max-width:575px){
+		.wrapper .swiper-container {
+		padding-bottom: 110%;
+    	}
+	}
 /*-------------------------------------------------------------*/
 .part.intro{
 	text-align: center;
@@ -206,6 +279,7 @@ body{
 	justify-content: space-around;
 	align-content: space-around;
 
+
 }
 .feature > li{
 	width: 45%;
@@ -250,6 +324,86 @@ body{
 	background-size: cover;
 	text-align: right;
 }
+	@media screen and (max-width: 575px){
+		.feature{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+
+	}
+
+ 		.feature > li{
+		width: 48%;
+		height: 0;
+		background-position: center center;
+		background-repeat: no-repeat;
+		margin-bottom: 4%;
+		padding: 3% 10px 33%;
+		box-sizing: border-box;
+		text-shadow: gray 0 1px 1px;
+		
+	}
+	.feature > li > p{
+	font-size: 12px;
+	line-height: 1.2;
+	}
+	.feature > li >h3{
+	font-size: 16px;
+	}
+
+
+	}
+
+
+ 	@media screen and (min-width: 576px) and (max-width: 767px){
+
+ 		.feature{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+
+	}
+
+ 		.feature > li{
+		width: 48%;
+		height: 0;
+		background-position: center center;
+		background-repeat: no-repeat;
+		margin-bottom: 4%;
+		padding: 3% 10px 22%;
+		box-sizing: border-box;
+		text-shadow: gray 0 1px 1px;
+		
+	}
+    }
+   /* @media screen and (min-width: 768px) and (max-width: 991px){
+    
+    }*/
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+    	.feature{
+		display: inline-block;
+		width: 100%;
+		}
+		.feature > li{
+			width: 75%;
+			height: 0;
+			background-position: center center;
+			background-repeat: no-repeat;
+			/*margin-bottom: 4%;*/
+			padding: 4% 20px 10%;	
+		}
+		.feature_2, .feature_4{
+			float: right;
+		}
+
+		.feature_1, .feature_3{
+			clear: both;
+		}
+    }
+
+
 /*-------------------------------------------------------------*/
 .part.brands{
 }
@@ -274,6 +428,62 @@ body{
 	text-align: center;
 	padding-top: 15px;
 }
+	@media screen and (max-width: 575px){
+
+	.brand{
+	display: flex;
+	flex-direction: column;
+	}
+
+	.brand li {
+	margin-bottom: 10px;
+	}
+
+	.brand li img {
+	float: left;
+	width: 50%;
+	}
+
+	.brand li p{
+	display: inline-block;
+	width: 50%;
+	padding: 12% 3% 0 ;
+	box-sizing: border-box;
+	}
+
+	li.hotel_brands > img {
+	float: right;
+	width: 50%;
+	}
+
+	}
+
+ 	@media screen and (min-width: 576px) and (max-width: 767px){
+
+ 	.brand{
+	display: flex;
+	justify-content: space-between;
+	}
+	
+	.brand li {
+	width: 30%;
+	}
+
+	.brand li p{
+	display: inline-block;
+	width: 90%;
+	padding: 4% 0 0 ;
+	}
+
+	.brand li img{
+		width: 100%;
+	}
+
+
+	}
+
+
+
 /*-------------------------------------------------------------*/
 .part.activities{
 
@@ -281,6 +491,11 @@ body{
 .activity{
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 395px;
 }
 .activity > li{
 	background-repeat: no-repeat;
@@ -289,6 +504,7 @@ body{
 	height: 392px;
 	padding: 0 20px;
 	box-sizing: border-box;
+	overflow: hidden;
 
 }
 .activity > li > h3{
@@ -314,6 +530,7 @@ body{
 	padding-bottom: 10px;
 	font-size: 20px;
 }
+
 
 /*-------------------------------------------------------------*/
 .part.list{
@@ -357,101 +574,116 @@ body{
 	flex-direction: row-reverse;
 	justify-content: flex-start;
 }
+
+@media screen and (max-width: 575px){
+	.list li{
+		justify-content: center;
+		padding: 80px 0;
+	}
+
+}
 /*-------------------------------------------------------------*/
-.locations > main{
 
-	background-image: url(../../web_location/img_locations/wallhaven4gwmvd4.jpg);
-	background-position: -96px -11px;
-	background-repeat: no-repeat;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-.main_do{
-	width: 1180px;
-	height: 95%;
-	margin: 0 auto;
-	border: 2px dashed #521100;
-	border-radius: 20px;
-	padding-top: 15px;
-	box-sizing: border-box;
-}
 
-.location{
-	display: flex;
-	justify-content: space-around;
-
+/* 40px */
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
 }
-.location > li{
-	text-align: center;
-	display: inline-block;
-
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
 }
-.dot{
-	padding: 10px;
-	border: 2px dashed #521100;
-	border-radius: 20px;
-	margin-bottom: 20px;
-	display: inline-block;
-
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
 }
-.dot >img{
-	width: 200px;
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
 }
-.location > li >p+p{
-	text-align: right;
-} 
-.location > li >h3{
-	margin-bottom: 5px;
+.toTop-arrow:focus {outline: none;}
+ 
+ 
+/* 48px */
+.toTop-arrow {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
 }
-.location + p{
-	text-align: right;
-	margin-top: 20px;
-	margin-right: 10px;
-	padding-bottom: 10px;
-	font-size: 20px;
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 25px;
+	height: 6px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
 }
-
-/*-------------------------------------------------------------*/
-footer{
-	background-image: url(../../img_basis/wallhaven-neojdw.jpg);
-	background-position: center;
-	padding: 80px 30px;
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.42rem;
 }
-.bottom {
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 35px;
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.42rem;
 }
-
-.bt_link_title{
-	color: white;
+.toTop-arrow:focus {outline: none;}
+ 
+/* 56px */
+.toTop-arrow {
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
 }
-.bt_link_list > li{
-	text-align: center;
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
 }
-.bt_link_list > li > p > a{
-	color: white;
-	line-height: 1.5;
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.4rem;
 }
-.bt_link_list > li > p > a:hover{
-	color: orange;
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.4rem;
 }
-.bt_information{
-	text-align: center;
-}
-h4{
-	color: white;
-	text-align: center;
-}
-.underline{
-	background-color: white;
-	width: 80px;
-	height: 1px;
-	margin: 20px auto;
-}
-h4+h4+h4{
-	margin-bottom: 10px;
-}
-.logo2{
-	width: 100px;
-}
+.toTop-arrow:focus {outline: none;}

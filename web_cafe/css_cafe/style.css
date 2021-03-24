@@ -349,18 +349,61 @@ header section{
 }
 
 @media screen and (max-width: 575px) {
+
+	.feature{
+	justify-content: space-between;
+	align-content: space-around;
+
+	}
 	
 	.feature > li{
-		flex-basis: 200Px;
-		height: 200px;
+		flex-basis: 47.5%;
+		height: 0;
+		padding-bottom: 47.5%;
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
-		margin: 0 15px 30px;
+		margin: 0 0 5%;
 	}
 	.feature > .feature_1{
-		background-position: -255px 0px;
+		background-position: -240px 0px;
 	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1550px){ 
+
+.feature{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+
+}
+.feature > li{
+	flex-basis: 45%;
+	height: 0;
+	padding-bottom: 15%;
+	margin: 0 2.5% 5%;
+}
+
+}
+
+ @media screen and (min-width: 768px) and (max-width: 991px) { 
+
+	.feature{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-around;
+
+	}
+	.feature > li{
+		flex-basis: 47%;
+		height: 0;
+		padding-bottom: 15%;
+		margin: 0 0 5%;
+	}
+
 }
 
 
@@ -386,61 +429,76 @@ header section{
 
 }
 
+ .wrapper .swiper-container {
+		width:100%;
+		height: 0px;
+		padding-bottom: 35%;
+    }
+
+
+    .swiper-slide {
+      text-align: center;
+      
+
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: flex-start;
+    }
+
+     .swiper-slide img{
+     	width: 100%;
+     	display: block;
+     }
+
+
+     .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    display: none;
+}
+
+     .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    color: white;
+	}
+	.swiper-button-next:after, .swiper-button-prev:after {
+	color: white;
+	}
+
+
+
 @media screen and (min-width: 992px) and (max-width: 1199px){ 
-
-	.space > li > img{
-	width: 982px;
-	height: auto;
-	margin-right: 38px;
-	}
-
-	.icon.no2{
-	top:400px;
-	}
 
 }
 
 
   @media screen and (min-width: 768px) and (max-width: 991px) { 
 
-	.space > li > img{
-	width: 758px;
-	height: auto;
-	margin-right: 30px;
-	}
-
-	.icon.no2{
-	top:380px;
-	}
-
 }
 
 
  @media screen and (min-width: 576px) and (max-width: 767px) { 
 
-	.space > li > img{
-	width: 566px;
-	height: auto;
-	margin-right: 20px;
-	}
 
-	.icon.no2{
-	top:350px;
-	}
 
 }
 
 @media screen and (max-width: 575px) { 
 
-	.space > li > img{
-	width: 500px;
-	height: auto;
-	margin-right: 15px;
-	}
-
-	.icon.no2{
-	top:300px;
-	}
+ .wrapper .swiper-container {
+		width:100%;
+		height: 0px;
+		padding-bottom: 60%;
+    }
 
 
 }
@@ -476,13 +534,21 @@ header section{
 
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px){ 
+
+	.menu > li >img{
+	width: 100%;
+}
+
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 991px) { 
 	.menu li a img{
-	max-width: 360px;
+	width: 100%;
 	}
 	.menu  li  a  img:hover{
-	width: 
+	width: 100%;
 	}
 	.menu > li {
 	text-align: right;
@@ -534,29 +600,37 @@ header section{
 }
 
 @media screen and (max-width: 575px) { 
-	.menu li a img{
-	width: 200px;
-	}
-	.menu  li  a  img:hover{
-	width: 210px;
+	.menu{
+	display: flex;
+	justify-content: space-around;
 	}
 	.menu > li {
-	text-align: right;
-	margin: 0 20px;
+		text-align: right;
+		width: 47%;
+		margin: 0;
+		
 	}
+
+	.menu li img{
+		width: 100%;
+	}
+	.menu  li  a  img:hover{
+		width: 102%;
+	}
+
+	
 	.menu > li >h3{
-	text-align: center;
-	font-size: 20px;
-	margin: 20px 0;
+		text-align: center;
+		font-size: 16px;
+		margin: 3% 0;
 	}
 	.menu > li >p{
-	text-align: center;
-	/*color: red;*/
-	width: 200px;
-	margin: 10px auto;
-	padding: 10px;
-	box-sizing: border-box;
-	font-size: 16px;
+		text-align: center;
+		margin: 10px auto;
+		padding: 10px;
+		box-sizing: border-box;
+		font-size: 12px;
+		width: 100%;
 
 	}
 }

@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>cafe</title>
 	<link rel="stylesheet" href="css_cafe/style.css">
+	<link rel="stylesheet" href="../style_css.css/header.css">
+	<link rel="stylesheet" href="../style_css.css/footer.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 
@@ -16,7 +19,7 @@
 				<a href="../web_index/index.html"><img src="../img_basis/logo.png" alt=""></a>
 				<label for="menu_control" class="menu_btn"><span>選單</span></label>
 				<ul class="headbar">
-					<li><a href="#">活動消息 I</a></li>
+					<li><a href="../web_activity 2/activity2.html">活動消息 I</a></li>
 					<li><a href="../web_location/locations.html">地點位置 I</a></li>
 					<li><a href="../web_cafe/cafe.html">寵物咖啡 I</a></li>
 					<li><a href="../web_hotel/hotel.html">寵物旅館 I</a></li>
@@ -24,7 +27,7 @@
 					<li><a href="#">會員登入 I</a></li>
 				</ul>
 				<ul class="headbar2">
-					<li><a href="#">活動消息 I</a></li>
+					<li><a href="../web_activity 2/activity2.html">活動消息 I</a></li>
 					<li><a href="../web_location/locations.html">地點位置 I</a></li>
 					<li><a href="../web_cafe/cafe.html">寵物咖啡 I</a></li>
 					<li><a href="../web_hotel/hotel.html">寵物旅館 I</a></li>
@@ -79,9 +82,9 @@
 						</article>
 					</li>
 				</ul>
-				<img src="../img_basis/Icon_arrow-back.png" class="icon back" alt="">
-				<img src="../img_basis/Icon_arrow-forward.png" class="icon forward" alt="">
-				<div class="link_news"><a href="#">more ></a></div>
+				<!-- <img src="../img_basis/Icon_arrow-back.png" class="icon back" alt="">
+				<img src="../img_basis/Icon_arrow-forward.png" class="icon forward" alt=""> -->
+				<div class="link_news"><a href="../web_activity 2/activity2.html">more ></a></div>
 			</main>
 		</div>
 		<div class="part features">
@@ -96,16 +99,37 @@
 			</main>
 		</div>
 		<div class="part spaces">
-			<main>
+			<!-- <main>
 				<h2>環境空間 I</h2>
 				<ul class="space">
 				<li class="space_1"><img src="img_cafe/Group171.png" alt=""></li>
 				<li class="space_2"><img src="img_cafe/Group169.png" alt=""></li>
 				<li class="space_3"><img src="img_cafe/Group173.png" alt=""></li>
 				</ul>
-				<img src="../img_basis/Icon_arrow-back.png" class="icon no2 back" alt="">
-				<img src="../img_basis/Icon_arrow-forward.png" class="icon no2 forward" alt="">
-			</main>
+			</main> -->
+
+
+			<h2>環境空間 I</h2>
+			<div class="swiper-container">
+		    <div class="swiper-wrapper">
+
+		      <div class="swiper-slide"><img src="img_cafe/Group171.png" alt=""></div>
+		      <div class="swiper-slide"><img src="img_cafe/Group169.png" alt=""></div>
+		      <div class="swiper-slide"><img src="img_cafe/Group173.png" alt=""></div>
+		      <div class="swiper-slide"><img src="img_cafe/Group171.png" alt=""></div>
+		      <div class="swiper-slide"><img src="img_cafe/Group169.png" alt=""></div>
+		      <div class="swiper-slide"><img src="img_cafe/Group173.png" alt=""></div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		    <!-- Add Arrows -->
+		    <div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev"></div>
+			 </div>
+			 </div>
+		 </div>
+
+
+
 
 		<div class="part menus">
 			<main>
@@ -116,7 +140,7 @@
 				</ul>
 			</main>
 		</div>
-		</div>	
+			
 	</div>	
 <!-- ----------------------------------------------------- -->
 		<div class="part locations">
@@ -194,5 +218,53 @@
 			</section>
 		</footer>
 	
+
+	 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 15,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+ 	    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      breakpoints:{
+
+      	992:{
+      		slidesPerView: 2,
+      		slidesPerGroup: 1,
+      	},
+
+      	576:{
+      		slidesPerView: 2,
+      		slidesPerGroup: 1,
+      	},
+
+      	1:{
+      		slidesPerView: 1,
+      		slidesPerGroup: 1,
+      	}
+
+
+      }
+
+    });
+
+
+  </script>
 </body>
 </html>

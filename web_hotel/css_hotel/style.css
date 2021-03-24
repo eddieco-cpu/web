@@ -1,6 +1,6 @@
  @import url('reset.css');
 
-*{outline: 1px solid red;}
+/*{outline: 1px solid red;}*/
 a{
 	text-decoration: none;
 	color: #521100;
@@ -30,43 +30,67 @@ body{
 	/*background-image: url(../../img_basis/bg_img.png);*/
 	background-position: top center;
 }
+
+.wrapper{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	padding-top:0.1px;
+	/*background-color: rgba(255,255,255,0.7); */
+}
+
 .part{
 	margin: 0 auto;
 }
 /*-------------------------------------------------------------*/
 
 
-.bg{
-	margin-top: 15px;
-	display: flex;
-	overflow: hidden;
-	justify-content: center;
+
+ .wrapper .swiper-container {
+		width:100%;
+		height: 0px;
+		padding-bottom: 60%;
+    }
+
+
+    .swiper-slide {
+      text-align: center;
+      
+
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: flex-start;
+    }
+
+     .swiper-slide img{
+     	width: 100%;
+     	display: block;
+     }
+
+
+     .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    display: none;
 }
-.bgp{
-	margin-right: 10px;
-	width: 90%;
-	height: 0;
-	padding: 25% 0;
-	background-size: cover;
-	background-position: top center;
-	flex-shrink: 0;
-}
-.bgp p{
-	text-align: right;
-	padding: 10px;
-	font-size: 20px;
+
+     .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    color: white;
+	}
+	.swiper-button-next:after, .swiper-button-prev:after {
 	color: white;
-}
-.bgp1{
-background-image: url(../img_hotel/bg1.jpg);
-}
-.bgp2{
-background-image: url(../img_hotel/186.png);
-}
-.bgp3{
-background-image: url(../img_hotel/bg3.jpg);
-}
-p{}
+	}
+
 /*-------------------------------------------------------------*/
 .activities{
 
