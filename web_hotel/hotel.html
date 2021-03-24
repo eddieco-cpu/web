@@ -27,7 +27,7 @@
 					<li><a href="#">會員登入 I</a></li>
 				</ul>
 				<ul class="headbar2">
-					<li><a href="#">活動消息 I</a></li>
+					<li><a href="../web_activity 2/activity2.html">活動消息 I</a></li>
 					<li><a href="../web_location/locations.html">地點位置 I</a></li>
 					<li><a href="../web_cafe/cafe.html">寵物咖啡 I</a></li>
 					<li><a href="../web_hotel/hotel.html">寵物旅館 I</a></li>
@@ -271,8 +271,25 @@
 
 			</section>
 		</footer>
+		<button type="button" id="BackTop" class="toTop-arrow"></button>
 
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
  <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,

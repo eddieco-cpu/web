@@ -253,7 +253,29 @@
 
 			</section>
 		</footer>
+
+		<button type="button" id="BackTop" class="toTop-arrow"></button>
+
+
+
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
 		<script>
 			$("label.streth").on("click", function(){
 				$(this).closest("li").find("section.box").slideToggle();

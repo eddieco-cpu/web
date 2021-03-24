@@ -155,14 +155,19 @@ body{
 		.wrapper .swiper-container {
 		padding-bottom: 110%;
     	}
+    	.swiper-container h2 {
+    	font-size: 16px;
+    }
 	}
 /*-------------------------------------------------------------*/
 .part.intro{
 	text-align: center;
 	padding:  0 4% 4%;
+	padding: 10%;
+	box-sizing: border-box;
 }
 .part.intro p{
-	margin-bottom: 0.5%;
+	margin-bottom: 3%;
 }
 /*-------------------------------------------------------------*/
 .part.about{
@@ -174,10 +179,12 @@ body{
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 .part.about p{
-	margin-bottom: 0.5%;
+	margin-bottom: 3%;
 }
 .part.about p,.part.about h2{
 	color: orange;
@@ -216,12 +223,15 @@ body{
 	font-size: 20px;
 	color: orange;
 	text-shadow: gray 0 1px 1px;
+	padding: 0 10px;
 }
 
 .spirit li article p{
 	color: orange;
 	text-shadow: gray 0 1px 1px;
 	line-height: 1.5;
+	padding: 10px;
+	box-sizing: border-box;
 }
  	@media screen and (max-width: 575px){
  		.spirit > li{
@@ -347,9 +357,11 @@ body{
 	.feature > li > p{
 	font-size: 12px;
 	line-height: 1.2;
+	display: none;
 	}
 	.feature > li >h3{
-	font-size: 16px;
+	font-size: 13px;
+	line-height: 6;
 	}
 
 
