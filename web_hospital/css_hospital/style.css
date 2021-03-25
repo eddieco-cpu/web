@@ -670,86 +670,50 @@ html,
       padding: 0;
     }
 
-    .swiper-container {
-      width: 100%;
-      height: 650px;
-      overflow: hidden;
-      background-color: rgb(238,238,238);
+    .wrapper .swiper-container {
+		width:100%;
+		height: 0px;
+		padding-bottom: 60%;
     }
+
 
     .swiper-slide {
       text-align: center;
-      font-size: 18px;
-      background: #fff;
+      
+
 
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+      flex-direction: column;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       -webkit-justify-content: center;
-      justify-content: center;
+      justify-content: flex-start;
       -webkit-box-align: center;
       -ms-flex-align: center;
       -webkit-align-items: center;
-      align-items: center;
-      overflow: hidden;
-      width: 80%;
-      height: 0;
-      padding-bottom: 40%;
-      overflow: hidden;
-      background-color: rgb(238,238,238);
+      align-items: flex-start;
     }
-      .swiper-slide img {
-      	width: 100%;
-      	height: auto;
-      	
-      }
-    @media screen and (max-width: 575px){
-    	.swiper-slide img {
-    	width: 100%;
-     	}
-     	.swiper-container {
-	      width: 100%;
-	      height: 400px;
-	      overflow: hidden;
-	    }
-    }
-    @media screen and (min-width: 576px) and (max-width: 767px){
-    	.swiper-slide img {
-    	width: 90%;
-     	}
-     	.swiper-container {
-	      width: 100%;
-	      height: 440px;
-	      overflow: hidden;
-	    }
 
-    }
-    @media screen and (min-width: 768px) and (max-width: 991px){
-    	.swiper-slide img {
-    	width: 700px;
-      	max-width: 100%;
-     	}
+     .swiper-slide img{
+     	width: 100%;
+     	display: block;
+     }
 
-     	.swiper-container {
-	      width: 100%;
-	      height: 500px;
-	      overflow: hidden;
-	    }
 
-    }
-    @media screen and (min-width: 992px) and (max-width: 1199px){
-      .swiper-container {
-      width: 100%;
-      height: 600px;
-      overflow: hidden;
-    }
-    }
-    @media screen and (min-width: 1200px){
-    }
+     .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    display: none;
+}
+
+     .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    color: white;
+	}
+	.swiper-button-next:after, .swiper-button-prev:after {
+	color: white;
+	}
 
 
 

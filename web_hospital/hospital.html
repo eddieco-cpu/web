@@ -180,24 +180,24 @@
 			</section>
 		</div>
 
-	
-	<h2>環境設施 I</h2>
- 	<div class="swiper-container">
- 	    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img_hospital/56f846ed11d2abe8f92b4a6a8d15ed48.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="img_hospital/pic-4.png" alt=""></div>
-      <div class="swiper-slide"><img src="img_hospital/pic-6.png" alt=""></div>
-      <div class="swiper-slide"><img src="img_hospital/99.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="img_hospital/98.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="img_hospital/pic-3.png" alt=""></div>
-    </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
 
+
+<h2>環境設施 I</h2>
+  <div class="swiper-container">
+		    <div class="swiper-wrapper">
+
+		      <div class="swiper-slide"><img src="img_hospital/pic-4.png" alt=""></div>
+		      <div class="swiper-slide"><img src="img_hospital/pic-6.png" alt=""></div>
+		      <div class="swiper-slide"><img src="img_hospital/99.jpg" alt=""></div>
+		      <div class="swiper-slide"><img src="img_hospital/98.jpg" alt=""></div>
+		      <div class="swiper-slide"><img src="img_hospital/pic-3.png" alt=""></div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		    <!-- Add Arrows -->
+		    <div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev"></div>
+			 </div>
+</div>
 
 <!-- ----------------------------------------------------- -->
 		<div class="part locations">
@@ -303,21 +303,45 @@ $(function(){
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
-      cssMode: true,
+      slidesPerView: 1,
+      spaceBetween: 15,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      pagination: {
-        el: '.swiper-pagination'
-      },
-      mousewheel: true,
-      keyboard: true,
 
-       autoplay: {
+ 	    autoplay: {
         delay: 2500,
         disableOnInteraction: false,
       },
+
+      breakpoints:{
+
+      	992:{
+      		slidesPerView: 1,
+      		slidesPerGroup: 1,
+      	},
+
+      	576:{
+      		slidesPerView: 1,
+      		slidesPerGroup: 1,
+      	},
+
+      	1:{
+      		slidesPerView: 1,
+      		slidesPerGroup: 1,
+      	}
+
+
+      }
 
     });
   </script>
