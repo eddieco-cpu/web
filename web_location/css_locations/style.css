@@ -190,7 +190,7 @@ select{
 
 	background-image: url(../img_locations/wallhaven4gwmvd5.jpg);
 	background-position: 0px -11px;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size:cover;
 	padding-top: 15px;
 	padding-bottom: 15px;

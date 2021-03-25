@@ -75,10 +75,14 @@ header main{
 }
 /*-------------------------------------------------------------*/
 .part.bread{
-	padding-top: 78px;
+	padding-top: 88px;
 
 }
 /*-------------------------------------------------------------*/
+body div.wrapper{
+	width: 100%;
+}
+
 .bg_image{
 	background-image: url(../img_hospital/hospital_facility_bg1.jpg);
 	background-position: center;
