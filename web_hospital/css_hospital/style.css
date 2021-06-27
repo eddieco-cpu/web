@@ -436,6 +436,7 @@ select{
 	text-align: right;
 	padding-right: 15px;
 	box-sizing: border-box;
+	line-height: 1.5;
 }
 .facility > li >p >a{
 	display: block;

@@ -229,7 +229,7 @@ body{
 .spirit li article p{
 	color: orange;
 	text-shadow: gray 0 1px 1px;
-	line-height: 1.5;
+	line-height: 1.8;
 	padding: 10px;
 	box-sizing: border-box;
 }
@@ -699,3 +699,9 @@ body{
 	right: 0.4rem;
 }
 .toTop-arrow:focus {outline: none;}
+
+
+body div p {
+	line-height: 1.8;
+	
+}
